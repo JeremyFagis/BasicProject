@@ -74,20 +74,20 @@ gulp.task('scripts-prod', function() {
                .pipe(gulp.dest(distDir + "/js"));
 });
 
+
 gulp.task('clean', function() {
     return gulp.src(distDir, {read: false})
                .pipe($.clean());
 });
 
-
-gulp.task('default', ['clean', 'sass-prod', 'scripts-prod', 'lib-css', 'lib-js', 'fonts', 'images'], function() {
+gulp.task('default', ['sass-prod', 'scripts-prod', 'lib-css', 'lib-js', 'fonts', 'images'], function() {
     gulp.watch(jsDir + '**/*.js', ['scripts-prod']);
     gulp.watch(sassDir + '**/*.scss', ['sass-prod']);
 });
 
-gulp.task('dev', ['clean', 'sass-dev', 'scripts-dev', 'lib-css', 'lib-js', 'fonts', 'images'], function() {
+gulp.task('dev', ['sass-dev', 'scripts-dev', 'lib-css', 'lib-js', 'fonts', 'images'], function() {
     gulp.watch(jsDir + '**/*.js', ['scripts-dev']);
     gulp.watch(sassDir + '**/*.scss', ['sass-dev']);
 });
 
-gulp.task('install', ['clean', 'sass-prod', 'scripts-prod', 'lib-css', 'lib-js', 'fonts', 'images'], function(){});
+gulp.task('install', ['sass-prod', 'scripts-prod', 'lib-css', 'lib-js', 'fonts', 'images'], function(){});
