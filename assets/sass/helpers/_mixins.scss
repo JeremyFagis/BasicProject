@@ -11,3 +11,7 @@
         clear: both;
     }
 }
+
+@mixin toEm($size) {
+	font-size: $size/$base-font-size + em;
+}
