@@ -1,19 +1,19 @@
 $background-color: #F8F8F8 !default;
-$base-font-family: "Roboto", "Helvetica Neue", "Helvetica" !default;
-$base-font-size:   15px !default;
-$base-line-height: $base-font-size * 1.8 !default;
+$base-font-family: "Roboto Mono", "Helvetica Neue", "Helvetica" !default;
+$base-font-size:   13px !default;
+$base-line-height: 1.8em !default;
 $text-color:       #666 !default;
+$links-color:      #444 !default;
 
 $main-color: #F34141 !default;
 
-$headings-font-family:    "Roboto Condensed", "Helvetica Neue", "Helvetica" !default;
-$headings-font-weight:    400 !default;
-$headings-line-height:    1.4 !default;
-$headings-letter-spacing: -0.04em !default;
-$headings-text-transform: uppercase !default;
+$headings-font-family:    "Roboto Mono", "Helvetica Neue", "Helvetica" !default;
+$headings-font-weight:    800 !default;
+$headings-line-height:    1.4em !default;
+$headings-letter-spacing: 0 !default;
 $headings-color:          #444 !default;
 $headings-small-color:    lighten($text-color, 30%) !default;
-$headings-margin:         20px !default;
+$headings-margin:         1em !default;
 
 $font-size-h1: 30px !default;
 $font-size-h2: 26px !default;

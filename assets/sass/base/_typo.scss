@@ -1,6 +1,6 @@
 a {
     &, &:visited {
-        color: #666;
+        color: $links-color;
         text-decoration: none;
     }
 
@@ -15,12 +15,14 @@ h1, h2, h3, h4 {
     line-height: $headings-line-height;
     color: $headings-color;
     letter-spacing: $headings-letter-spacing;
+    margin-bottom: $headings-margin;
 
     small,
     .small {
         font-weight: normal;
         line-height: 1;
         color: $headings-small-color;
+        font-size: 65%;
     }
 
     a {
@@ -28,25 +30,12 @@ h1, h2, h3, h4 {
     }
 }
 
-h1, h2, h3 , h4 {
-    margin: 0;
-
-    small,
-    .small {
-        font-size: 65%;
-    }
-}
-
 h1 {
     font-size: $font-size-h1;
-    text-transform: $headings-text-transform;
-    margin-bottom: $headings-margin;
-    position: relative;
 }
 
 h2 {
     font-size: $font-size-h2;
-    margin-bottom: $headings-margin;
 }
 
 h3 {
@@ -58,5 +47,5 @@ h4 {
 }
 
 p {
-    margin: 0 0 20px 0;
+    margin: 0 0 1em 0;
 }
